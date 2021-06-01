@@ -1,0 +1,14 @@
+.logo {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  color: var(--color-black);
+  font-size: 1.125rem;
+}
+
+@media only screen and (min-width: 640px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+}

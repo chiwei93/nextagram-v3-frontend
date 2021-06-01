@@ -1,0 +1,36 @@
+.card {
+  border: 1px solid var(--color-primary);
+  border-radius: 1em;
+  padding: 1em 0;
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -0.1em 0.5em var(--color-shadow);
+  box-shadow: 0 0.1em 0.5em var(--color-shadow);
+}
+
+.imageContainer img {
+  max-width: 100%;
+}
+
+.commentContainer {
+  margin-top: 1em;
+  padding: 0 1.5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .commentContainer {
+    padding: 0 2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .commentContainer {
+    padding: 0 3em;
+  }
+}

@@ -1,0 +1,37 @@
+.container {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 640px) {
+  .container {
+    padding: 0 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 4em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding: 0 12em;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .container {
+    padding: 0 20vw;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .container {
+    padding: 0 30vw;
+  }
+}

@@ -1,0 +1,145 @@
+.commentsSection {
+  margin-top: 1em;
+  font-size: 0.875rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.controls p {
+  color: var(--color-gray);
+}
+
+.likes {
+  font-size: 0.875rem;
+  color: var(--color-primary);
+}
+
+.userCaption {
+  margin-bottom: 0.5em;
+}
+
+.userCaption span {
+  margin-left: 1em;
+  color: var(--color-gray);
+}
+
+.tagsList {
+  margin: 1em 0 0.5em;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btnViewMore {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-bottom: 0.5em;
+}
+
+.btnViewMore:hover,
+.btnViewMore:active {
+  color: var(--color-secondary);
+}
+
+.commentsHeading {
+  margin-bottom: 1em;
+  font-weight: bold;
+  color: var(--color-gray);
+}
+
+.commentList {
+  list-style: none;
+  max-height: 20rem;
+  overflow-y: scroll;
+  padding: 0.1em;
+  min-height: 5rem;
+}
+
+.commentList::-webkit-scrollbar {
+  display: none;
+}
+
+.homeCommentList {
+  list-style: none;
+  margin: 1em 0;
+  min-height: 3rem;
+}
+
+.addPost {
+  display: flex;
+
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid var(--color-primary);
+}
+
+.addPost input {
+  flex: 0.85;
+  border: none;
+  outline: none;
+}
+
+.btnPost {
+  flex: 0.15;
+  text-align: right;
+}
+
+.btnPost button:hover,
+.btnPost button:active {
+  color: var(--color-secondary);
+}
+
+.btnPost button {
+  all: unset;
+  cursor: pointer;
+  color: var(--color-primary);
+  transition: color 0.3s;
+  outline: none;
+}
+
+.btnPost button.disabled {
+  cursor: not-allowed;
+}
+
+@media only screen and (min-width: 768px) {
+  .commentsSection {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 50%;
+  }
+
+  .likes {
+    font-size: 1rem;
+  }
+
+  .commentList {
+    flex: 1;
+  }
+
+  .addPost input {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .commentsSection,
+  .addPost input {
+    font-size: 1rem;
+  }
+
+  .controls {
+    font-size: 1.3rem;
+  }
+}

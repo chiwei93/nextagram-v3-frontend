@@ -1,0 +1,12 @@
+.userLink {
+  text-decoration: none;
+  color: var(--color-black);
+  display: inline-block;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.userLink:hover,
+.userLink.active {
+  color: var(--color-secondary);
+}

@@ -1,0 +1,26 @@
+.btn {
+  all: unset;
+  font-size: 0.875rem;
+  padding: 0.5em 1em;
+  border: 1px solid var(--color-primary);
+  border-radius: 0.3em;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn.followed {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+@media only screen and (min-width: 640px) {
+  .btn {
+    font-size: 1rem;
+  }
+}

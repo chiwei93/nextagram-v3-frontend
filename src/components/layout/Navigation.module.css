@@ -1,0 +1,47 @@
+.nav {
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linkList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.linkItem:not(:last-child) {
+  margin-right: 1em;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-black);
+  display: inline-block;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.link:hover,
+.link:active {
+  color: var(--color-primary);
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .linkList,
+  .btn {
+    font-size: 1rem;
+  }
+
+  .linkItem:not(:last-child) {
+    margin-right: 2em;
+  }
+}

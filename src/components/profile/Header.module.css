@@ -1,0 +1,184 @@
+.container {
+  margin-top: 2em;
+}
+
+.imageContainer {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.imageContainer img {
+  width: 45vw;
+  height: 45vw;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.btnProfile {
+  all: unset;
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: background-color 0.3s;
+}
+
+.btnProfile:hover,
+.btnProfile:active {
+  background-color: var(--color-secondary);
+}
+
+.infoContainer {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.statContainer {
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marRight {
+  margin-right: 2em;
+}
+
+.statNum {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.statText {
+  color: var(--color-gray);
+  font-size: 0.875rem;
+  margin-top: 0.5em;
+}
+
+.center {
+  text-align: center;
+}
+
+.btnUpload {
+  all: unset;
+  background-color: var(--color-primary);
+  padding: 0.5em 1em;
+  font-size: 0.875rem;
+  color: var(--color-white);
+  border-radius: 0.4em;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.3s;
+}
+
+.btnUpload:hover,
+.btnUpload:active {
+  background-color: var(--color-secondary);
+}
+
+@media only screen and (min-width: 500px) {
+  .imageContainer img {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .container {
+    display: flex;
+  }
+
+  .outerContainer {
+    flex: 0.4;
+    text-align: left;
+  }
+
+  .imageContainer img {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .infoContainer {
+    margin-top: 0;
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .statContainer {
+    justify-content: flex-start;
+  }
+
+  .statNum {
+    text-align: center;
+  }
+
+  .statContainer + .center {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .username {
+    font-size: 1.125rem;
+  }
+
+  .statNum {
+    font-size: 1.25rem;
+  }
+
+  .statText,
+  .btnUpload {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .imageContainer img {
+    width: 18vw;
+    height: 18vw;
+  }
+
+  .username {
+    font-size: 1.25rem;
+  }
+
+  .statNum {
+    font-size: 1.375rem;
+  }
+
+  .statText {
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .imageContainer img {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .imageContainer img {
+    width: 8vw;
+    height: 8vw;
+  }
+}

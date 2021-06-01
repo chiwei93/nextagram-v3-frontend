@@ -1,0 +1,111 @@
+.modal {
+  width: 90vw;
+  background-color: var(--color-white);
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.btnClose {
+  all: unset;
+  margin-bottom: 3em;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.btnClose:active,
+.btnClose:hover {
+  color: var(--color-primary);
+}
+
+.message {
+  text-align: center;
+}
+
+.btnContainer {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.btn {
+  all: unset;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 0.875rem;
+  border-radius: 0.4em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-secondary);
+}
+
+.marRight {
+  margin-right: 2em;
+}
+
+@media only screen and (min-width: 640px) {
+  .modal {
+    width: 70vw;
+  }
+
+  .btnClose {
+    font-size: 1.25rem;
+  }
+
+  .message {
+    font-size: 1.125rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 60vw;
+  }
+
+  .message {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .modal {
+    width: 50vw;
+  }
+
+  .btnClose {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .modal {
+    width: 45vw;
+  }
+
+  .message {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .modal {
+    width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .modal {
+    width: 25vw;
+  }
+}

@@ -1,0 +1,55 @@
+.container {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-bottom: 1em;
+}
+
+.container h2 {
+  margin: 2em 0 1.5em;
+  font-size: 2rem;
+}
+
+.container h4 {
+  margin-bottom: 2.5em;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+}
+
+.container p {
+  margin-bottom: 2em;
+  line-height: 1.4;
+}
+
+@media only screen and (min-width: 640px) {
+  .container {
+    font-size: 1rem;
+  }
+
+  .container h2 {
+    font-size: 2.5rem;
+  }
+
+  .container h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    font-size: 1.1rem;
+  }
+
+  .container h2 {
+    font-size: 3rem;
+  }
+
+  .container h4 {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    font-size: 1.2rem;
+  }
+}

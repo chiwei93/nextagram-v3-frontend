@@ -1,0 +1,51 @@
+.userContainer {
+  padding: 0 1.5em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.profileImageContainer {
+  flex: 0.25;
+}
+
+.profileImageContainer img {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.userInfoContainer {
+  flex: 0.5;
+}
+
+.userLink {
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.userLink:hover,
+.userLink:active {
+  color: var(--color-primary);
+}
+
+.followContainer {
+  flex: 0.25;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .userContainer {
+    padding: 0 2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .userContainer {
+    padding: 0 3em;
+  }
+}

@@ -1,0 +1,78 @@
+.container {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: block;
+    flex: 0.4;
+    position: relative;
+  }
+
+  .profileCard {
+    box-shadow: 0 0 0.4em 0.1em var(--color-shadow);
+    width: 30%;
+    border-radius: 0.5em;
+    padding: 1.5em;
+    position: fixed;
+    right: 3em;
+    top: 15%;
+    text-align: center;
+  }
+
+  .imageContainer img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+  }
+
+  .link {
+    text-decoration: none;
+    color: var(--color-black);
+    margin-top: 1em;
+    display: inline-block;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1.125rem;
+  }
+
+  .link:hover,
+  .link:active {
+    color: var(--color-primary);
+  }
+
+  .statContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    font-size: 1.25rem;
+    color: var(--color-gray);
+  }
+
+  .statText {
+    font-size: 1rem;
+    margin-top: 0.3em;
+    color: var(--color-primary);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .profileCard {
+    width: 25%;
+    right: 11em;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .profileCard {
+    width: 20%;
+    right: 19vw;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .profileCard {
+    width: 15%;
+    right: 29vw;
+  }
+}

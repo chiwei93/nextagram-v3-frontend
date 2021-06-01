@@ -1,0 +1,20 @@
+.item {
+  margin-bottom: 0.5em;
+}
+
+.item:not(:last-child) {
+  margin-right: 1em;
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  color: var(--color-black);
+  transition: color 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: var(--color-primary);
+}

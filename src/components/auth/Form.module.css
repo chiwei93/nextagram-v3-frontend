@@ -1,0 +1,121 @@
+.container {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.form {
+  box-shadow: 0 0 0.5em 0.1em var(--color-shadow);
+  border-radius: 0.5em;
+  padding: 2em 1.5em;
+  font-size: 0.875rem;
+}
+
+.formControl {
+  margin-bottom: 2em;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.inputContainer input {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0.3em 0.1em var(--color-shadow);
+  padding: 0.3em 0.5em;
+  border-radius: 0.3em;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputContainer input::placeholder {
+  color: var(--color-light-gray);
+}
+
+.inputContainer label {
+  margin-bottom: 0.8em;
+  color: var(--color-gray);
+  transition: color 0.3s;
+}
+
+.inputContainer input:focus {
+  border-color: var(--color-primary);
+  box-shadow: none;
+}
+
+.inputContainer input:focus + label {
+  color: var(--color-primary);
+}
+
+.errorMsg {
+  font-size: 0.75rem;
+  margin-top: 0.5em;
+  color: var(--color-error);
+}
+
+.inputContainer.error input {
+  border-color: var(--color-error);
+  box-shadow: none;
+}
+
+.inputContainer.error label {
+  color: var(--color-error);
+}
+
+.btnContainer {
+  text-align: center;
+}
+
+.btn {
+  all: unset;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 0.875rem;
+  border-radius: 0.4em;
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-secondary);
+}
+
+@media only screen and (min-width: 640px) {
+  .form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em;
+  }
+
+  .form,
+  .inputContainer input,
+  .btn {
+    font-size: 1rem;
+  }
+
+  .errorMsg {
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .form {
+    width: 55%;
+    padding: 2em 2.5em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .form {
+    width: 50%;
+  }
+}

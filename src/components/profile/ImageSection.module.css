@@ -1,0 +1,22 @@
+.container {
+  margin: 5em 0 3em;
+}
+
+.container h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.25rem;
+  margin-bottom: 1.5em;
+}
+
+.imagesContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+@media only screen and (min-width: 640px) {
+  .imagesContainer {
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    grid-gap: 1em;
+  }
+}
